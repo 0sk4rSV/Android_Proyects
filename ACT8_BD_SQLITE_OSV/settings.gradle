@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "ACT8_BD_SQLITE_OSV"

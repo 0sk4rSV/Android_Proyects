@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvFechaGuardado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="42dp"
+        android:background="#FF0000"
+        android:text=" Último acceso no definido "
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="237dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="24dp"
+        android:checkedButton="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFechaGuardado">
+
+        <RadioButton
+            android:id="@+id/rbMoodle"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:onClick="setCursoGuardado"
+            android:text="AULA MOODLE"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <RadioButton
+            android:id="@+id/rbDirecta"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="9dp"
+            android:onClick="setCursoGuardado"
+            android:text="AULA DIRECTA"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <RadioButton
+            android:id="@+id/rbAndroid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:onClick="setCursoGuardado"
+            android:text="AULA ANDROID"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/radioButton"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etCurso"
+        android:layout_width="290dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Curso:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/tvCursoActual"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="24dp"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCurso" />
+
+    <Button
+        android:id="@+id/bGuardar"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="376dp"
+        android:onClick="guardarDatos"
+        android:text="GUARDAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCursoActual"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/bBorrar"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="50dp"
+        android:onClick="borrarDatos"
+        android:text="BORRAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/bGuardar"
+        app:layout_constraintTop_toBottomOf="@+id/tvCursoActual" />
+
+    <TextView
+        android:id="@+id/tvGuardado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="No hay datos del curso guardados."
+        android:textSize="18sp"
+        android:gravity="center"
+        android:lineSpacingExtra="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bBorrar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

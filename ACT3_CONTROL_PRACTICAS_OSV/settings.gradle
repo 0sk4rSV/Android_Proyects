@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "ACT3_CONTROL_PRACTICAS_OSV"

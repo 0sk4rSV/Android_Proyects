@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "ACT7_ALMACENAMIENTO_DATOS_SP_OSV"

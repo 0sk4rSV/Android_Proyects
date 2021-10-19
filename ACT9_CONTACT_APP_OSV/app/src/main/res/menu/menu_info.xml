@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_opciones"
+        android:icon="@drawable/ic_baseline_more_vert_24"
+        android:orderInCategory="100"
+        android:title="Opciones"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/bExportar"
+                android:icon="@drawable/ic_baseline_import_export_24"
+                android:title="Importar" />
+
+            <item
+                android:id="@+id/bEditar"
+                android:icon="@drawable/ic_baseline_edit_24"
+                android:title="Editar" />
+
+            <item
+                android:id="@+id/bEliminar"
+                android:icon="@drawable/ic_baseline_delete_24"
+                android:title="Eliminar" />
+        </menu>
+
+    </item>
+</menu>

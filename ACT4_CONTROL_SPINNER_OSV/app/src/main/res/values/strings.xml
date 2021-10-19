@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ACT4_CONTROL_SPINNER</string>
+    <string-array name="modulos">
+        <item>PMDM</item>
+        <item>DI</item>
+        <item>AD</item>
+    </string-array>
+</resources>
