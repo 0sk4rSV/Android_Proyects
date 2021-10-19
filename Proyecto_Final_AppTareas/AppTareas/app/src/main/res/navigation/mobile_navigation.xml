@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- En este archivo .xml que contiene y define el gráfico de navegación de nivel superior,
+ definimos y referenciamos los fragments que tenemos en nuestra aplicación.
+ El gráfico de navegación de nivel superior de tu app debería comenzar con el destino inicial
+ que el usuario ve cuando la inicia y debería incluir los destinos que ve cuando se desplaza
+ por ella.
+ Mediante el atributo "android:startDestinacion" definimos el fragment de inicio -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.actionbar_navigationdrawer_osv.ui.home.HomeFragment"
+        android:label="Mi lista de tareas"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_paraHoy"
+        android:name="com.example.actionbar_navigationdrawer_osv.ui.filters.F_ParaHoyFragment"
+        android:label="Tareas para hoy"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_recordatorios"
+        android:name="com.example.actionbar_navigationdrawer_osv.ui.filters.F_RecordatorioFragment"
+        android:label="Recordatorios"
+        tools:layout="@layout/fragment_home" />
+</navigation>

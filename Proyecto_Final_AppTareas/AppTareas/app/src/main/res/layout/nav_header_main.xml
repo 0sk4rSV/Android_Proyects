@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- En este archivo .xml vamos a diseñar la cabecera que aparecerá en la
+ parte superior de nuestro NavigationViewer.
+ Como fondo se ha utilizado un archivo .xml que contiene código para generar
+ un degradado, solo hace falta obtener su referencia y ponerlo como fondo con
+ el atributo "android:background". -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/side_nav_bar"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <TextView
+        android:id="@+id/tvImagen"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_background"
+        android:contentDescription="Navigation header"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:text="Ó"
+        android:textSize="22dp"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="Lista de tareas"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#000000"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:text="Óscar Suárez"
+        android:textColor="#000000"
+        android:textSize="21dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

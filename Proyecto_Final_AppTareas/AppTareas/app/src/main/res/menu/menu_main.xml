@@ -1,0 +1,29 @@
+<!-- En este archivo situado en res/menu/menu_main.xml vamos a definir cada uno de
+ los elementos de acción y botones que aparecerán en la AppBar de nuestra Activity principal. -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Main">
+
+    <item
+        android:id="@+id/bBuscar"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:orderInCategory="2"
+        android:title="Buscar"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_opciones"
+        android:icon="@drawable/ic_baseline_more_vert_24"
+        android:orderInCategory="100"
+        android:title="Opciones"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/bInformacion"
+                android:title="Acerca de..." />
+        </menu>
+    </item>
+
+</menu>

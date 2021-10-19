@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- En este archivo situado en res/layout/activity_main.xml vamos a definir la estructura
+ y la opciones que tendrá nuestro menú del NavigationDrawer. Podemos organizar las
+ diferentes opciones por grupos y categorias. -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Inicio" />
+
+        <item android:title="Filtrar">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_paraHoy"
+                        android:icon="@drawable/ic_baseline_event_24"
+                        android:title="Para hoy" />
+                    <item
+                        android:id="@+id/nav_recordatorios"
+                        android:icon="@drawable/ic_baseline_notifications_24"
+                        android:title="Recordatorios" />
+                </group>
+            </menu>
+        </item>
+
+    </group>
+</menu>

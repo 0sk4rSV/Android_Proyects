@@ -1,0 +1,30 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Desctivamos la AppBar y el título que se nos crea automaticamente en cada
+         Activity que creemos. -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <!-- Creamos un nuevo estilo que herede de AppTheme y tenga desactivada la AppBar, esto lo
+     hacemos añadiendo al final del atributo "name" de la etiqueta <style> .NoActionBar
+     Además definimos un nuevo <item> con el atributo name="android:textColorSecondary" y el color
+     que queramos que tengan los elementos secundarios de la AppBar.
+     En mi caso; cambiaré a color blanco, el texto y los botones del SearchView. -->
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:textColorSecondary">@color/colorWhite</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+</resources>
